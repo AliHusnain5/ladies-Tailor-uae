@@ -1,0 +1,87 @@
+/* Talor.css */
+
+.header-container {
+    width: 100%;
+  }
+  
+  .app-bar {
+    background-color: #3f51b5;
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .top-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .icon {
+    margin: 0 5px;
+    color: #fff;
+  }
+  
+  .home-top {
+    padding: 20px;
+  }
+  
+  .home-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-div {
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain the aspect ratio */
+    background-image: url('/path-to-your-logo-image.png'); /* Path to your logo image */
+    background-size: contain; /* Make sure the logo fits within the div */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the logo image within the div */
+  }
+  
+  .call-us .btn {
+    background-color: #3f51b5;
+    color: #fff;
+  }
+  
+  .divider {
+    margin: 20px 0;
+  }
+  
+  .button-main {
+    display: flex;
+    padding: 10px;
+    width: 1000px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+    width: 500px; 
+    justify-content: space-evenly;
+    margin-left: 20px;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .buttons {
+      display: none;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  }
+  
