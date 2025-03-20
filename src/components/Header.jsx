@@ -159,10 +159,10 @@ const Header = ({ isServicesPage }) => {
               </div>
             )}
           </div>
-        </div>
+        </div> 
       </div>
 
-      <div style={{ marginTop: "-700px" }}>
+       <div style={{ marginTop: "-700px" }}>
         <div className="photo-container">
           <img
             src={photos[currentPhotoIndex]}
