@@ -5,7 +5,7 @@ const TopFooter = () => {
   return (
     <div className="top-footer">
       <div className="footer-section">
-        <h4>ali</h4>
+        <h4>Alm ladies tailor & fashion</h4>
         <p>
           At AMINA Fashion, we understand that the right attire enhances confidence
           and leaves a lasting impression. Step into a world where style meets
