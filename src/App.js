@@ -13,6 +13,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"; // Make sure to
 import Services from "./components/Services";
 import NextSeven from "./components/NextSeven";
 import NextEight from "./components/NextEight";
+// import Whatsapp from "./components/Whatsapp";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/" element={
             <>
               <Header />
+              {/* <Whatsapp/> */}
               <NextTwo />
               <NextThree />
               <NextFour />
@@ -32,6 +34,7 @@ function App() {
               <NextEight />
               <TopFooter />
               <Footer />
+             
             </>
           } />
           <Route exact path="/Services" element={<Services />} />

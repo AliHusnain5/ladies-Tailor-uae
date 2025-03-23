@@ -19,6 +19,7 @@ import "./Talor.css"; // Import the CSS file
 import photo1 from "./images/R (1).jpeg";
 import photo2 from "./images/woman-tailor-working-sewing-factory_1303-15837.avif";
 import { useNavigate } from "react-router-dom" ;
+import WhatsApp from "./Whatsapp";
 
 const photos = [photo1, photo2];
 
@@ -212,6 +213,9 @@ const Header = ({ isServicesPage }) => {
               </div>
             )}
           </div>
+          <div style={{marginLeft:"800px",position:""}}><WhatsApp  /></div>
+          
+
         </center>
       </div>
 
