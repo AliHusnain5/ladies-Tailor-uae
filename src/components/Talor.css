@@ -70,13 +70,32 @@ html, body {
 }
 
 .call-us .btn {
-  border-radius: 100px;
-  background-color: white;
-  color: green;
-  font-weight: 800;
-  opacity: 1;
-  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(270deg, #00c6ff, #0072ff, #800080, #00c6ff);
+  background-size: 600% 600%;
+  animation: waveColors 5s ease infinite;
+  box-shadow: 0 10px 30px rgba(0, 114, 255, 0.3);
+  transition: transform 0.3s ease;
 }
+
+.call-us .btn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes waveColors {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
 
 .divider {
   width: 90%;

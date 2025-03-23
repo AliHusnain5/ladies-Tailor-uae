@@ -108,7 +108,7 @@ const Header = ({ isServicesPage }) => {
             <div className="logo-div"></div>
             <div className="call-us">
               <Button variant="contained" className="btn">
-                Call Us: 03094946763
+                Call Us: +971-52-2277110
               </Button>
             </div>
           </div>
