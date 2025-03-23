@@ -30,6 +30,9 @@ const Header = ({ isServicesPage }) => {
   const [showFirstDiv, setShowFirstDiv] = useState(true);
   const [openPrivacyDialog, setOpenPrivacyDialog] = useState(false);
   const navigate = useNavigate();
+  const handleClick = () => {
+    window.open('https://wa.me/qr/A7KCKZKKWINSN1', '_blank');
+  };
 
   const handleNavigation = (path) => () => navigate("/Services");
 
@@ -106,7 +109,7 @@ const Header = ({ isServicesPage }) => {
         <div className="home-top">
           <div className="home-div">
             <div className="logo-div"></div>
-            <div className="call-us">
+            <div className="call-us"  onClick={handleClick}>
               <Button variant="contained" className="btn">
                 Call Us: +971-52-2277110
               </Button>
@@ -175,7 +178,7 @@ const Header = ({ isServicesPage }) => {
           <div className="text-div">
             {showFirstDiv ? (
               <div>
-                <h1 className="title">One Stop Ladies Tailor</h1>
+                <h1 className="title">Alm ladies tailor & Fashion</h1>
                 <p className="description">
                   Discover the convenience and elegance at our one stop ladies
                   tailor in Dubai. At Amina ladies tailor, we redefine the
