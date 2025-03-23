@@ -28,16 +28,28 @@ const WhatsApp = () => {
 
       <style>
         {`
-          @media (max-width: 600px) {
+          /* Extra small devices (phones, 320px and up) */
+          @media (max-width: 480px) {
+            button {
+              padding-left: 25px;
+              background-size: 18px 18px;
+              height: 35px;
+              font-size: 0.85rem;
+            }
+          }
+
+          /* Small devices (phones, 481px and up) */
+          @media (min-width: 481px) and (max-width: 600px) {
             button {
               padding-left: 30px;
               background-size: 20px 20px;
-              height: 35px;
+              height: 37px;
               font-size: 0.9rem;
             }
           }
 
-          @media (min-width: 601px) and (max-width: 1024px) {
+          /* Medium devices (tablets, 601px and up) */
+          @media (min-width: 601px) and (max-width: 768px) {
             button {
               padding-left: 35px;
               background-size: 25px 25px;
@@ -46,6 +58,17 @@ const WhatsApp = () => {
             }
           }
 
+          /* Large devices (tablets and small laptops, 769px and up) */
+          @media (min-width: 769px) and (max-width: 1024px) {
+            button {
+              padding-left: 38px;
+              background-size: 28px 28px;
+              height: 42px;
+              font-size: 1.05rem;
+            }
+          }
+
+          /* Extra large devices (laptops and desktops, 1025px and up) */
           @media (min-width: 1025px) {
             button {
               padding-left: 40px;
