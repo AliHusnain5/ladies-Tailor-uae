@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import photo1 from './images/R (1).jpeg';
-import photo2 from './images/www.ladiestailor.ae_-1024x576.jpg';
+import photo2 from './images/R (2).jpeg';
 import './Talor.css'; // Import the CSS file
 
 const photos = [photo1, photo2];

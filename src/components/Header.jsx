@@ -19,6 +19,8 @@ import "./Talor.css"; // Import the CSS file
 import photo1 from "./images/R (1).jpeg";
 import photo2 from "./images/woman-tailor-working-sewing-factory_1303-15837.avif";
 import { useNavigate } from "react-router-dom" ;
+import MatirlaUi from "./MatirlaUi";
+import Text from "./Text";
 // import WhatsApp from "./Whatsapp";
 
 const photos = [photo1, photo2];
@@ -26,8 +28,6 @@ const photos = [photo1, photo2];
 const Header = ({ isServicesPage }) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 600);
-  const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
-  const [showFirstDiv, setShowFirstDiv] = useState(true);
   const [openPrivacyDialog, setOpenPrivacyDialog] = useState(false);
   const navigate = useNavigate();
   const handleClick = () => {
@@ -68,25 +68,11 @@ const Header = ({ isServicesPage }) => {
     };
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % photos.length);
-    }, 5000); // Change photo every 5 seconds
 
-    return () => clearInterval(interval); // Clean up the interval on component unmount
-  }, []);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setShowFirstDiv((prevShowFirstDiv) => !prevShowFirstDiv);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <>
-      <div className="header-container" id="Home">
+      <div className="header-container" id="Home" >
         <AppBar position="static" className="app-bar" style={{ backgroundColor: isServicesPage ? 'white' : 'default' }}>
           <Toolbar className="toolbar">
             <Box className="top-bar">
@@ -164,63 +150,12 @@ const Header = ({ isServicesPage }) => {
             )}
           </div>
         </div> 
-      </div>
+        <div className="dev-one"><MatirlaUi/>
 
-       <div style={{ marginTop: "-700px" }}>
-        <div className="photo-container">
-          <img
-            src={photos[currentPhotoIndex]}
-            alt="Rotating photo"
-            className="responsive-photo"
-          />
+        <Text/>
         </div>
-        <center>
-          <div className="text-div">
-            {showFirstDiv ? (
-              <div>
-                <h1 className="title">Alm ladies tailor & Fashion</h1>
-                <p className="description">
-                  Discover the convenience and elegance at our one stop ladies
-                  tailor in Dubai. At Amina ladies tailor, we redefine the
-                  shopping experience by offering a comprehensive range of
-                  tailored solutions under one roof. From casual chic to bespoke
-                  evening wear and bridal elegance, our skilled artisans cater
-                  to every aspect of a woman's wardrobe.
-                </p>
-                <Button
-                  variant="contained"
-                  color="success"
-                  className="cta-button"
-                  style={{ borderRadius: "40px",height:"55px",fontSize:"20px"  }}
-                >
-                  Visit Now
-                </Button>
-              </div>
-            ) : (
-              <div>
-                <h1 className="title">Hand Crafted Gowns</h1>
-                <p className="description">
-                  Meticulously designed and delicately tailored by our skilled
-                  tailor, each gown is a masterpiece that transcends <br></br>
-                  trends, promising a wedding ensemble that is as<br></br>{" "}
-                  unique as your story.
-                </p>
-                <Button
-                  variant="contained"
-                  color="success"
-                  className="cta-button"
-                  style={{ borderRadius: "40px",width:"255px",height:"55px",fontSize:"20px"}}
-                >
-                  Make Appointment
-                </Button>
-              </div>
-            )}
-          </div>
-          {/* <div style={{marginLeft:"800px",position:""}}><WhatsApp  /></div> */}
-          
-
-        </center>
       </div>
+
 
       <Dialog open={openPrivacyDialog} onClose={handlePrivacyDialogClose}>
         <DialogTitle>Privacy Policy</DialogTitle>

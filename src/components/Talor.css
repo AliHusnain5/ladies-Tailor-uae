@@ -12,8 +12,10 @@ html, body {
 
 
 .header-container {
+  /* position: relative; */
   width: 100%;
   height: 700px;
+  /* background-color: #800080; */
 }
 
 .app-bar {
@@ -225,7 +227,7 @@ html, body {
 
 @media (max-width: 480px) {
   .responsive-photo {
-    height: auto;
+    height: 60%;
   }
 }
 
@@ -315,6 +317,11 @@ html, body {
     font-size: 0.875rem;
   }
 }
+.dev-one{
+  /* position: absolute; */
+  /* z-index: -4; */
+  margin-top: -180px;
+}
 /* Talor.css */
 
 .button:hover + .dialog {
@@ -326,6 +333,7 @@ html, body {
   width: 70px;
   height: 70px;
 }
+
 
 
 

@@ -18,7 +18,7 @@ const Text = () => {
       <div className="text-div">
         {showFirstDiv ? (
           <div>
-            <h1 className="title">One Stop Ladies Tailor</h1>
+            <h1 className="title">Alm ladies tailor & fashion</h1>
             <p className="description">
               Discover the convenience and elegance at our one stop ladies tailor in Dubai. At Amina ladies
               tailor, we redefine the shopping experience by offering a comprehensive range of tailored solutions
